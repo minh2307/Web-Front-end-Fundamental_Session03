@@ -21,9 +21,11 @@
             <td><input type="date" name="dateOfBirth" id="Ngày sinh"></td>
         </tr>
         <tr>
-            <td><label for="gender">Giới tính</label></td>
-            <td><input type="radio" name="gender" id="nam"> Nam</td>
-            <td>  <input type="radio" name="gender" id="nữ"> Nữ</td>
+            <td><label for="gender">Giới tính:</label></td>
+            <td>
+                <input type="radio" name="gender" id="gender" value="Nam"> Nam
+                <input type="radio" name="gender" id="gender" value="nũ"> Nữ
+            </td>
         </tr>
         <tr>
             <td><label for="sdt">Số điện thoại:</label></td>
@@ -34,20 +36,34 @@
             <td><input type="text" name="ngành" id="Chuyên Ngành"></td>
         </tr>
         <tr>
-            <td><label for="year">Năm nhập học</label></td>
+            <td><label for="year">Năm nhập học:</label></td>
             <td><input type="number" name="year" id="năm" min="1900" max="2100" step="1"></td>
         </tr>
         <tr>
-            <td><label for="point"></label></td>
-            <td></td>
+            <td><label for="GPA"></label>Điểm GPA:</td>
+            <td><input type="number" name="GPA" id="Điểm GPA" min="0" max="4" step="0.1"></td>
         </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-   
+        <tr>  
+            <td><label for="Địa chỉ">Địa chỉ:</label></td>
+            <td><textarea name="Địa chỉ" id="Địa chỉ"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="class">Lớp học:</label></td>
+            <td>
+                <select name="class" id="Lớp học">
+                    <option value="Lóp 1">Lớp 1</option>
+                    <option value="Lóp 2">Lớp 2</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Nhập học">Ngày đang ký học:</label></td>
+            <td><input type="datetime-local" name="Nhập học" id="Ngày đăng ký nhập học"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Gửi thông tin"></td>
+        </tr>
     </table>
-    
     </form>
 </body>
 </html>
